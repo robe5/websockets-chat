@@ -3,7 +3,7 @@ this will only work in a modern browser like Google Chrome.
 
 # Installing the application
 
-    git clone git@github.com:robe5/Websockets-Chat.git
+    git clone git@github.com:robe5/websockets-chat.git
     gem install bundler
     bundle install
 
