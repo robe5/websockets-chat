@@ -1,0 +1,68 @@
+<script type="text/javascript" charset="utf-8">
+  var Channel = "<%= @room_id %>";
+  Chat.server += Channel; 
+</script>
+
+<div id="room">
+  <p class="note">
+    You can invite other people to this room giving then this link:
+    <a href="/room/<%= @room_id %>"><%= @room_id %></a>
+  </p>
+  
+  <div class="connect-form">
+    <!-- form login -->
+    <form id="connect-form">
+      <input type="text" class="text" id="login" placeholder="Login" />
+      <input type="submit" value="Connect" />
+    </form>
+    <!-- end form login -->
+  </div>
+  
+  <div id="left" class="onEnter" style="display:none">
+    <div id="chatWrapper">
+      <table class="chat">
+        <tbody id="chat">
+          <!-- example -->
+          <tr class="message" style="display:none">
+            <td class="person">Usuario</td>
+            <td class="body"><div>Texto</div></td>
+          </tr>        
+          <!-- end example -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+  <div id="right" class="onEnter" style="display:none">
+    <div class="participants">
+      <h3>Participants</h3>
+      <ul class="participant-list">
+        <li class="user" style="display:none">
+          <span class="name">Jose Miguel</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="clear"></div>
+  
+  <div class="speak onEnter" style="display:none">
+    <form id="chat_form">
+      <table id="speak">
+        <tbody>
+          <tr>
+            <td class="input">
+              <textarea id="input" type="text" style="width:100%"></textarea>
+            </td>
+            <td class="chat_controls">
+              <div id="chat_controls">
+                <input id="send" type="submit" value="enviar">
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </div>
+  
+</div>

@@ -1,0 +1,147 @@
+.clear{
+  clear:both;
+}
+.note{
+	font-size: 12px;
+	margin: 0;
+}
+body{
+  margin:0;
+  background-color: #E5E5E5;
+  color: #333;
+  font-family: 'Lucida Grande', verdana, arial, helvetica, sans-serif;
+  font-size: 14px;
+}
+
+header{
+  margin: 0 auto;
+  padding-top: 50px;
+  width: 500px;
+  text-align: center;
+}
+
+#wrapper{
+  margin: 13px auto 0;
+  padding: 0 23px 0 30px;
+}
+#container{
+  text-align: center;
+}
+
+.window{
+  background: #fff;
+  border-radius: 2px;
+  margin: 0 auto;
+
+  width: 500px;
+  -webkit-box-shadow: #414141 0px 0px 20px;
+  list-style: none;
+  padding: 10px;
+  display:block;
+}
+.onEnter{
+  display:none;
+}
+
+#room{
+  width: 660px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 2px;
+  -webkit-box-shadow: #414141 0px 0px 20px;
+}
+#room p{
+  padding: 20px;
+}
+.connect-form{
+  background: #fff;
+  padding: 0 0 10px 0;
+}
+.connect-form input.text{
+  border: 1px solid #ccc;
+  padding: 3px 5px;
+}
+#left{
+  width: 67%;
+  float:left;
+}
+
+#chatWrapper{
+  border-right:1px solid #e5e5e5;
+  height: 250px; 
+  overflow:auto;
+  padding:0 10px;
+}
+
+#right{
+  width: 33%;
+  float:left;
+  text-align: left;
+}
+
+.speak{
+  width: 100%;
+}
+
+.speak .input{ 
+  padding: 10px 0 10px 10px;
+  width: 67%;
+}
+
+.speak .chat_controls{
+  width: 33%;"
+}
+table#speak{
+  width: 100%;
+}
+
+table.chat{
+  font-size: 11px;
+  width: 100%;
+}
+
+table.chat td {
+  border-bottom: 1px solid #EFEFEF;
+  padding: 5px;
+}
+table.chat tr.message td {
+  border-bottom: 1px solid #e5e5e5;
+  font-size: 10px;
+}
+table.chat td.person {
+  background-color: #EFEFEF;
+  border-left: none;
+  font-weight: bold;
+  text-align: right;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 1%;
+}
+table.chat tr.enter_message td{
+  background-color: #D9E7FB;
+  border: 0;
+}
+
+table.chat tr.exit_message td{
+  background-color: #fff;
+  color: #999;
+}
+  
+.participants{
+  padding-left: 10px;
+}
+
+h3{
+  margin-top:0;
+}
+.participant-list{
+  list-style: none;
+  font-size: 11px;
+  margin:0;
+  padding: 0 10px 0 0;
+}
+.participant-list li{
+  margin: 5px 0;
+  padding: 0px 10px 5px 0;
+  border-bottom: 1px dotted #e5e5e5;
+}
